@@ -1,5 +1,6 @@
-namespace: default
-
 resources:
   - rollout.yaml
   - service.yaml
+  - ingress.yaml
+
+namespace: default
