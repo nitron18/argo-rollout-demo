@@ -6,7 +6,7 @@ data:
   index.html: |
     <!DOCTYPE html>
     <html>
-    <head><title>Version 1</title></head>
+    <head><title>Now is Version 2</title></head>
     <body style="text-align:center; padding-top:100px; font-family:sans-serif;">
       <h1 style="font-size:48px;"> Version 1</h1>
       <p style="font-size:24px;">Argo CD Rollouts Demo</p>
