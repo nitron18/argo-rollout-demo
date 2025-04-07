@@ -2,5 +2,6 @@ resources:
   - rollout.yaml
   - service.yaml
   - ingress.yaml
+  - configmap-v1.yaml
 
 namespace: default

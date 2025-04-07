@@ -13,10 +13,18 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.26
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: nginx:1.26
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: html-volume
+              mountPath: /usr/share/nginx/html/index.html
+              subPath: index.html
+      volumes:
+        - name: html-volume
+          configMap:
+            name: nginx-html  # Change to nginx-html-v2 to trigger version switch
   strategy:
     canary:
       steps:
