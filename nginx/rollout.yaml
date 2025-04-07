@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: nginx
+      annotations:
+        config-version: "v3"
     spec:
       containers:
         - name: nginx
